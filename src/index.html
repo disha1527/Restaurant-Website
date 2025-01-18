@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+ 
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="/src/input.css">
+  <link href="/src/output.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!--navbaar section-->
+ <nav class="bg-white border-gray-200 dark:bg-gray-900">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+     
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white ">Yammy.</span>
+     
+  </a>
+  <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+    <button type="button" class="bg-red-600 text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center  dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Book A Table</button>
+    <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+    <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <li>
+        <a href="#" class="block py-2 px-3 md:p-0 text-white bg-red-700 rounded md:bg-transparent md:text-red-700 md:dark:text-red-500" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:dark:hover:text-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:dark:hover:text-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Menu</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:dark:hover:text-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Event</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:dark:hover:text-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Chef</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:dark:hover:text-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Gallery</a>
+      </li>
+      
+   
+      <li>
+        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:dark:hover:text-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<!--navbaar end-->
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero section  bg-gray-100">
+    <div class="container mx-auto">
+      <div class="flex flex-col lg:flex-row lg:justify-between gap-4 justify-center">
+        <div class="lg:w-5/12 order-2 lg:order-1 flex flex-col justify-center mx-28 mt-10 ">
+          <h1 class="text-5xl font-bold mb-4 " data-aos="fade-up ">Enjoy Your Healthy<br>Delicious Food</h1>
+          <p class="text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
+            We are a team of talented designers making websites with <br>Tailwind CSS
+          </p>
+          <div class="flex gap-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="#book-a-table" class="btn-get-started bg-red-500 text-white px-4 py-2 rounded-full ">Book a Table</a>
+            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="flex items-center text-red-500">
+              <i class="bi bi-play-circle"></i>
+              <span class="ml-2 text-black">Watch Video</span>
+            </a>
+          </div>
+        </div>
+        <div class="lg:w-5/12 order-1 lg:order-2 hero-img mb-6" data-aos="zoom-out">
+          <img src="/img/hero-img.png" class="w-[550px] h-auto mt-6 "  alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Hero Section -->
+
+   <!-- About Section -->
+  <section id="about" class="about section py-12">
+
+    <!-- Section Title -->
+    <div class="container mx-auto text-center mb-12" data-aos="fade-up">
+      <h2 class="text-4xl font-bold">About Us<br></h2>
+      <p class="text-lg mt-5">
+        <span class="text-black">Learn More</span> 
+        <span class="description-title text-red-600">About Us</span>
+      </p>
+    </div>
+    <!-- End Section Title -->
+  
+    <div class="container mx-auto">
+  
+      <div class="flex flex-col lg:flex-row lg:space-x-6 space-y-8 lg:space-y-0">
+        <div class="lg:w-7/12" data-aos="fade-up" data-aos-delay="100">
+          <img src="/img/about.jpg" class="w-full h-auto mb-6" alt="">
+          <div class="book-a-table bg-gray-100 p-6 rounded-lg shadow-md" style="border: 2px solid black;">
+            <h3 class="text-2xl font-bold text-center">Book a Table</h3>
+            <p class="text-2xl font-bold text-red-500 mt-2 text-center">+1 5589 55488 55</p>
+          </div>
+        </div>
+        <div class="lg:w-5/12" data-aos="fade-up" data-aos-delay="250">
+          <div class="content">
+            <p class="italic text-lg mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <i class="bi bi-check-circle-fill text-red-500 mr-3"></i> 
+                <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+              </li>
+              <li class="flex items-start">
+                <i class="bi bi-check-circle-fill text-red-500 mr-3"></i> 
+                <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+              </li>
+              <li class="flex items-start">
+                <i class="bi bi-check-circle-fill text-red-500 mr-3"></i> 
+                <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span>
+              </li>
+            </ul>
+            <p class="mt-4">
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            </p>
+  
+            <div class="relative mt-6">
+              <img src="/img/about-2.jpg" class="w-full h-auto" alt="">
+              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  p-4 rounded-full pulsating-play-btn"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+  </section>
+   <!-- /About Section -->
+
+
+<!-- Why Us Section -->
+ <section class="container mx-auto p-6 bg-gray-100">
+           <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+               <!-- Left red box -->
+               <div class="col-span-1 bg-red-600 text-white p-8 rounded-lg shadow-lg">
+                   <h2 class="text-2xl font-bold mb-4 text-center">Why Choose Yummy</h2>
+                   <p class="mb-4  text-wrap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                   </p>
+                   
+                   <a href="#" class="inline-block bg-red-700 hover:bg-red-800 text-white py-2 px-4 rounded-full ml-20">Learn More  <i class="bi bi-chevron-right"></i></a>
+               </div>
+   
+               <!-- Right three boxes -->
+               <div class="col-span-1  md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6">
+                   <div class="bg-white p-6 rounded-lg shadow-lg">
+                       <div class="text-red-600 text-4xl mb-4 text-center">
+                           <!-- Icon -->
+                           <i class="bi bi-clipboard-data"></i>
+                       </div>
+                       <h3 class="text-2xl font-bold mb-2 text-center">Corporis voluptates officia eiusmod</h3>
+                       <p class="text-gray-600 text-center mt-6 text-xl">Consequuntur sunt aut quas enim aliquam quae harum pariatur laboris.</p>
+                   </div>
+   
+                   <div class="bg-white p-6 rounded-lg shadow-lg">
+                       <div class="text-red-600 text-4xl mb-4 text-center ">
+                           <!-- Icon -->
+                           <i class="bi bi-gem"></i>
+                       </div>
+                       <h3 class="text-2xl font-bold mb-2 text-center mt-4">Ullamco laboris ladore lore pan</h3>
+                       <p class="text-gray-600 text-center mt-6 text-xl">Exceptuer sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+                   </div>
+   
+                   <div class="bg-white p-6 rounded-lg shadow-lg">
+                       <div class="text-red-600 text-4xl mb-4 text-center">
+                           <!-- Icon -->
+                           <i class="bi bi-inboxes"></i>
+                       </div>
+                       <h3 class="text-2xl font-bold mb-2 text-center">Labore consequatur incidid dolore</h3>
+                       <p class="text-gray-600 text-center mt-6 text-xl">Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere.</p>
+                   </div>
+               </div>
+           </div>
+          </section>
+<!-- /Why Us Section -->
+
+
+<!-- Stats Section -->
+<section id="stats" class="stats section bg-gray-900 text-white py-12 relative mt-12">
+  <!-- Background image -->
+  <div class="absolute inset-0 opacity-50">
+    <img src="/img/stats-bg.jpg" alt="Background Image" class="w-full h-full object-cover" data-aos="fade-in">
+  </div>
+
+  <div class="container mx-auto relative z-10" data-aos="fade-up" data-aos-delay="100">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Stats Item 1 -->
+      <div class="stats-item text-center p-8  rounded-lg ">
+        <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter text-4xl font-bold block">232</span>
+        <p class="mt-2 text-lg">Clients</p>
+      </div>
+
+      <!-- Stats Item 2 -->
+      <div class="stats-item text-center p-8  rounded-lg ">
+        <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter text-4xl font-bold block">521</span>
+        <p class="mt-2 text-lg">Projects</p>
+      </div>
+
+      <!-- Stats Item 3 -->
+      <div class="stats-item text-center p-8  rounded-lg ">
+        <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter text-4xl font-bold block">1453</span>
+        <p class="mt-2 text-lg">Hours Of Support</p>
+      </div>
+
+      <!-- Stats Item 4 -->
+      <div class="stats-item text-center p-8  rounded-lg ">
+        <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter text-4xl font-bold block">32</span>
+        <p class="mt-2 text-lg">Workers</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Stats Section -->
+
+<!-- Menu Section -->
+<div class="container mx-auto my-10 bg-white">
+        <h1 class="text-4xl font-bold text-center mb-6">Check Our <span class="text-red-500">Yummy Menu</span></h1>
+
+        <!-- Tabs for different categories -->
+        <div class="flex justify-center space-x-4 mb-8">
+            <button class="px-4 py-2 bg-gray-200 text-gray-800 font-semibold rounded-lg">Starters</button>
+            <button class="px-4 py-2 bg-gray-100 text-gray-600 rounded-lg">Breakfast</button>
+            <button class="px-4 py-2 bg-gray-100 text-gray-600 rounded-lg">Lunch</button>
+            <button class="px-4 py-2 bg-gray-100 text-gray-600 rounded-lg">Dinner</button>
+        </div>
+
+        <!-- Menu items grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <!-- Item 1 -->
+            <div class="text-center">
+                <img src="/img/menu/menu-item-1.png" alt="Magnam Tiste" class="w-40 h-40 object-cover rounded-full mx-auto">
+                <h3 class="text-xl font-bold mt-4">Magnam Tiste</h3>
+                <p class="text-gray-600 text-sm">Lorem, deren, trataro, filede, nerada</p>
+                <p class="text-red-500 font-bold mt-2">$5.95</p>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="text-center">
+                <img src="/img/menu/menu-item-2.png" alt="Aut Luia" class="w-40 h-40 object-cover rounded-full mx-auto">
+                <h3 class="text-xl font-bold mt-4">Aut Luia</h3>
+                <p class="text-gray-600 text-sm">Lorem, deren, trataro, filede, nerada</p>
+                <p class="text-red-500 font-bold mt-2">$14.95</p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="text-center">
+                <img src="/img/menu/menu-item-3.png" alt="Est Eligendi" class="w-40 h-40 object-cover rounded-full mx-auto">
+                <h3 class="text-xl font-bold mt-4">Est Eligendi</h3>
+                <p class="text-gray-600 text-sm">Lorem, deren, trataro, filede, nerada</p>
+                <p class="text-red-500 font-bold mt-2">$8.95</p>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="text-center">
+                <img src="/img/menu/menu-item-4.png" alt="Eos Luibusdam" class="w-40 h-40 object-cover rounded-full mx-auto">
+                <h3 class="text-xl font-bold mt-4">Eos Luibusdam</h3>
+                <p class="text-gray-600 text-sm">Lorem, deren, trataro, filede, nerada</p>
+                <p class="text-red-500 font-bold mt-2">$12.95</p>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="text-center">
+              <img src="/img/menu/menu-item-5.png" alt="Eos Luibusdam" class="w-40 h-40 object-cover rounded-full mx-auto">
+              <h3 class="text-xl font-bold mt-4">Eos Luibusdam</h3>
+              <p class="text-gray-600 text-sm">Lorem, deren, trataro, filede, nerada</p>
+              <p class="text-red-500 font-bold mt-2">$12.95</p>
+          </div>
+
+            <!-- Item 6 -->
+            <div class="text-center">
+                <img src="/img/menu/menu-item-6.png" alt="Laboriosam Direva" class="w-40 h-40 object-cover rounded-full mx-auto">
+                <h3 class="text-xl font-bold mt-4">Laboriosam Direva</h3>
+                <p class="text-gray-600 text-sm">Lorem, deren, trataro, filede, nerada</p>
+                <p class="text-red-500 font-bold mt-2">$9.95</p>
+            </div>
+
+        </div>
+</div>
+<!-- /Menu Section -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="bg-gray-100 py-16">
+  <div class="container mx-auto text-center mb-12">
+    <h2 class="text-3xl font-semibold mb-4">What Are They <span class="text-red-500">Saying About Us</span></h2>
+    <p class="text-gray-500 uppercase tracking-widest">Testimonials</p>
+  </div>
+
+  <div class="container mx-auto flex flex-col items-center space-y-8">
+    <div class="w-full max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-lg relative">
+      <!-- Quote Icon -->
+      <div class="absolute left-0 top-8 text-red-500 text-4xl">
+        <i class="fas fa-quote-left"></i>
+      </div>
+
+      <!-- Testimonial Text -->
+      <p class="text-gray-700 text-lg leading-relaxed italic">
+        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, 
+        ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+      </p>
+
+      <!-- Author Info -->
+      <div class="mt-6 flex items-center justify-between">
+        <div>
+          <h4 class="text-xl font-semibold">Saul Goodman</h4>
+          <p class="text-gray-500">CEO & Founder</p>
+
+          <!-- Star Ratings -->
+          <div class="flex mt-2">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+          </div>
+        </div>
+
+        <!-- Profile Image -->
+        <div class="w-20 h-20 rounded-full overflow-hidden bg-gray-200">
+          <img src="/img/testimonials/testimonials-1.jpg" alt="Testimonial Image" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination Dots -->
+    <div class="flex space-x-2">
+      <button class="w-3 h-3 bg-red-500 rounded-full"></button>
+      <button class="w-3 h-3 bg-gray-400 rounded-full"></button>
+      <button class="w-3 h-3 bg-gray-400 rounded-full"></button>
+      <button class="w-3 h-3 bg-gray-400 rounded-full"></button>
+    </div>
+  </div>
+</section>
+
+<!-- /Testimonials Section -->
+
+
+
+
+<!-- Events Section -->
+<div class="container mx-auto py-8 bg-gray-100">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Private Parties -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/img/events-1.jpg" alt="Private Party" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800">Private Parties</h2>
+                    <p class="text-gray-600">$289</p>
+                    <p class="mt-2 text-gray-600">Enjoy exclusive private parties with your closest friends and family in a cozy setting.</p>
+                </div>
+            </div>
+
+            <!-- Birthday Parties -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/img/events-2.jpg" alt="Birthday Party" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800">Birthday Parties</h2>
+                    <p class="text-gray-600">$499</p>
+                    <p class="mt-2 text-gray-600">Celebrate your special day with a memorable birthday party, tailored to your style.</p>
+                </div>
+            </div>
+
+            <!-- Wedding Parties -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/img/events-3.jpg" alt="Wedding Party" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800">Wedding Parties</h2>
+                    <p class="text-gray-600">$899</p>
+                    <p class="mt-2 text-gray-600">Host a stunning wedding celebration that will leave lasting memories for you and your guests.</p>
+                </div>
+            </div>
+        </div>
+</div>
+<!-- /Events Section -->
+
+  <!-- Chefs Section -->
+  <div class="container mx-auto py-12 px-4 bg-gray-100">
+    <!-- Title -->
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Our Professional Chefs</h2>
+
+    <!-- Chef Cards Section -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Chef 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="/img/chefs/chefs-1.jpg" alt="Chef 1" class="w-full h-100 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold">Walter White</h3>
+                <p class="text-gray-600 text-sm mb-4">Master Chef</p>
+                <p class="text-gray-700 text-sm">Velit aut quia fugit et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+            </div>
+        </div>
+
+        <!-- Chef 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="/img/chefs/chefs-2.jpg" alt="Chef 2" class="w-full h-100 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold">Sarah Jhonson</h3>
+                <p class="text-gray-600 text-sm mb-4">Patissier</p>
+                <p class="text-gray-700 text-sm">Quo esse repellendus id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+            </div>
+        </div>
+
+        <!-- Chef 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="/img/chefs/chefs-3.jpg" alt="Chef 3" class="w-full h-100 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold">William Anderson</h3>
+                <p class="text-gray-600 text-sm mb-4">Cook</p>
+                <p class="text-gray-700 text-sm">Vero omnis enim consequat. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Chefs Section -->
+
+   <!-- Book A Table Section -->
+   <div class="container mx-auto py-12 px-4 bg-gray-100">
+    <!-- Title -->
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Book Your Stay With Us</h2>
+
+    <!-- Booking Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 ">
+        <!-- Left Image Section -->
+        <div>
+            <img src="/img/reservation.jpg" alt="Table Setting" class="shadow-lg w-full  h-[500px]">
+        </div>
+
+        <!-- Right Form Section -->
+        <div class="bg-white shadow-lg  p-6">
+            <form>
+                <!-- Input fields -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg" />
+                    <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" />
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <input type="text" placeholder="Your Phone" class="w-full p-3 border rounded-lg" />
+                    <input type="text" placeholder="dd-mm-yyyy" class="w-full p-3 border rounded-lg" />
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <input type="time" class="w-full p-3 border rounded-lg" />
+                    <input type="number" placeholder="# of people" class="w-full p-3 border rounded-lg" />
+                </div>
+                <textarea placeholder="Message" class="w-full p-3 border rounded-lg mb-4"></textarea>
+                <button class="w-full p-3 bg-red-500 text-white rounded-lg">Book a Table</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /Book A Table Section -->
+
+
+ <!-- Gallery Section -->
+ <section id="gallery" class="py-16 bg-gray-100">
+  <div class="container mx-auto text-center mb-8">
+    <h2 class="text-3xl font-semibold">Check Our Gallery</h2>
+  </div>
+
+  <div class="container mx-auto">
+    <div class="relative w-full overflow-hidden">
+      <!-- Image Slider Wrapper -->
+      <div class="flex items-center space-x-4 justify-center">
+        
+        <!-- Image 1 -->
+        <div class="flex-none w-64 h-64 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('/img/gallery/gallery-1.jpg')"></div>
+        
+        <!-- Image 2 -->
+        <div class="flex-none w-64 h-64 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('/img/gallery/gallery-2.jpg')"></div>
+
+        <!-- Image 3 -->
+        <div class="flex-none w-64 h-64 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('/img/gallery/gallery-3.jpg')"></div>
+
+        <!-- Image 4 -->
+        <div class="flex-none w-64 h-64 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('/img/gallery/gallery-4.jpg')"></div>
+
+        <!-- Image 5 -->
+        <div class="flex-none w-64 h-64 bg-cover bg-center rounded-lg shadow-lg" style="background-image: url('/img/gallery/gallery-5.jpg')"></div>
+
+      </div>
+
+      <!-- Pagination (Optional) -->
+      <div class="flex justify-center mt-4 space-x-2">
+        <button class="w-3 h-3 bg-red-500 rounded-full"></button>
+        <button class="w-3 h-3 bg-gray-400 rounded-full"></button>
+        <button class="w-3 h-3 bg-gray-400 rounded-full"></button>
+        <button class="w-3 h-3 bg-gray-400 rounded-full"></button>
+        <button class="w-3 h-3 bg-gray-400 rounded-full"></button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Gallery Section -->
+
+
+
+  <!-- Contact Section -->
+  <div class="container mx-auto py-12 px-4 bg-gray-100">
+    <!-- Title -->
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Need Help? Contact Us</h2>
+
+    <!-- Map Section -->
+    <div class="w-full h-64 mb-8">
+        <iframe class="w-full h-full rounded-lg shadow-lg" src="https://www.google.com/maps/embed?..." allowfullscreen></iframe>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex items-center">
+                <div class="text-red-500 text-3xl mr-4">
+                    <i class="bi bi-geo-alt"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold">Address</h3>
+                    <p>101B Adam Street, New York, NY 535022</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex items-center">
+                <div class="text-red-500 text-3xl mr-4">
+                    <i class="bi bi-telephone"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold">Call Us</h3>
+                    <p>+1 5589 55488 55</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex items-center">
+                <div class="text-red-500 text-3xl mr-4">
+                    <i class="bi bi-envelope"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold">Email Us</h3>
+                    <p>info@example.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex items-center">
+                <div class="text-red-500 text-3xl mr-4">
+                    <i class="bi bi-clock"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold">Opening Hours</h3>
+                    <p>Mon-Sat: 11AM - 23PM, Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+        <form>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg" />
+                <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" />
+            </div>
+            <input type="text" placeholder="Subject" class="w-full p-3 border rounded-lg mb-4" />
+            <textarea placeholder="Message" class="w-full p-3 border rounded-lg mb-4"></textarea>
+            <button class="w-full p-3 bg-red-500 text-white rounded-lg">Send Message</button>
+        </form>
+    </div>
+</div>
+<!-- /Contact Section -->
+  
+    
+
+   
+
+   <!--footer section-->
+   <footer id="footer" class="bg-gray-900 text-white py-8">
+
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  
+        <!-- Address Section -->
+        <div class="flex items-start space-x-4">
+          <i class="bi bi-geo-alt text-2xl text-red-500"></i>
+          <div class="address">
+            <h4 class="font-semibold text-lg">Address</h4>
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+          </div>
+        </div>
+  
+        <!-- Contact Section -->
+        <div class="flex items-start space-x-4">
+          <i class="bi bi-telephone text-2xl text-red-500"></i>
+          <div>
+            <h4 class="font-semibold text-lg">Contact</h4>
+            <p>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+        </div>
+  
+        <!-- Opening Hours Section -->
+        <div class="flex items-start space-x-4">
+          <i class="bi bi-clock text-2xl text-red-500"></i>
+          <div>
+            <h4 class="font-semibold text-lg">Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat:</strong> 11AM - 11PM<br>
+              <strong>Sunday:</strong> Closed
+            </p>
+          </div>
+        </div>
+  
+        <!-- Follow Us Section -->
+        <div>
+          <h4 class="font-semibold text-lg">Follow Us</h4>
+          <div class="flex space-x-4 mt-2">
+            <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-twitter text-2xl"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-facebook text-2xl"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-instagram text-2xl"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-linkedin text-2xl"></i></a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="container mx-auto text-center mt-8">
+      <p>© <strong class="px-1">Yummy</strong> All Rights Reserved</p>
+      <div class="credits text-white mt-2">
+        Designed by <a href="https://bootstrapmade.com/" class="text-red-500 hover:text-red-400">BootstrapMade</a>
+      </div>
+    </div>
+  
+  </footer>
+  <!--/footer section-->
+  
+
+
+  
+  
+ 
+   
+  
+  
+  
+  
+    
+</body>
+</html>
